@@ -4,7 +4,7 @@ from login_ui import login_ui
 
 def main():
     if st.session_state.get("authenticated", False):
-        st.title("Main Page: Wecome, " + st.session_state["display_name"])
+        st.title("Main Page: Welcome, " + st.session_state["display_name"])
     else:
         login_ui()
 
